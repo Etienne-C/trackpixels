@@ -8,11 +8,16 @@ Bundler.require(*Rails.groups)
 
 module Trackpixels
   class Application < Rails::Application
+    require Rails.root.join('lib', 'tracker', 'rack')
+    require Rails.root.join('lib', 'services', 'locations')
+    require Rails.root.join('lib', 'services', 'params')
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    config.middleware.use Tracker::Rack
   end
 end

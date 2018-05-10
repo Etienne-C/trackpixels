@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ip_address,: MyString
+  campaign,: MyString
+  content_type,: MyString
+  created_at: 2018-05-10
+  ,city,: MyString
+  state,: MyString
+  user_agent,: MyString
+  referral,: MyString
+  banner_size: MyString
+
+two:
+  ip_address,: MyString
+  campaign,: MyString
+  content_type,: MyString
+  created_at: 2018-05-10
+  ,city,: MyString
+  state,: MyString
+  user_agent,: MyString
+  referral,: MyString
+  banner_size: MyString
