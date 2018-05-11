@@ -10,12 +10,14 @@ ruby '2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 
-# Use Postgres
-gem 'pg'
-
 # Use sqllite3
-group :devlopment, :test do
-  gem 'sqlite3'
+group :development do
+   gem 'sqlite3'    #gem to use in development environment
+end
+
+
+group :production do
+  gem 'pg'         #gem to use in production environment
 end
 
 # Use Puma as the app server
