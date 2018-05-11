@@ -9,8 +9,14 @@ ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
+
 # Use Postgres
 gem 'pg'
+
+# Use sqllite3
+group :devlopment, :test do
+  gem 'sqlite3'
+end
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
